@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid #000;
+            border-collapse:collapse;  
+        }
+        /*  */
+        /* collapse 여백이 없어진다 */ 
+        th,td{
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        table 태그 : 표를 만드는 태그
+        tr 태그 : 표의 행 table row
+        th 태그 : 표의 제목 열 table header 진하게 
+        td 태그 : 표의 일반 열 table data
+        caption 태그 : 표의 제목 또는 설명을 작성하는 태그
+        colgroup : 열의 그룹을 정의해서, 해당 열의 스타일이나 속성을 그룹화 할 수 있는 코드
+        col : colgroup의 자식 태그로써 태그로 열 단위를 나눌 때 사용하는 태그, 시작 태그만 있다
+    -->
+    <table>
+        
+        <tr>
+            <th>제목 열 </th>
+            <td>일반 열 </td>
+        </tr>
+        <tr>
+            <th>제목 열 </th>
+            <td>일반 열 </td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>1반 성적표</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col style="background-color: yellow;">
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>반</th>
+                <th>이름</th>
+                <th>국어</th>
+                <th>수학</th>
+                <th>영어</th>
+                <th>과학</th>
+            </tr>
+        </thead>    
+        <!--
+             tr>th*6   '>'하위 태그를 작성하겠다
+
+            속성 ! rowspan="숫자값"(행병합) colspan(열병합)
+            thead 태그 : 표의 제목 열 등을 묶는  그룹 태그
+            tbody 태그 : 표의 일반 열 데이터를 묵는 그룹 태그
+            tfoot 태그 : 표의 하단 영역을 묶는 그룹 태그
+            기능 없이 문장 끼리 구별
+          -->
+        <tbody>
+            <tr>
+                <td rowspan="2">1반</td>
+                <td>홍길동</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+            </tr>
+                
+            <tr>
+                <!-- <td>1반</td> -->
+                <td>진성원</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+            </tr>
+        </tbody>  
+        <tfoot>
+            <tr>
+                <td colspan="2">평균</td>
+                <!-- <td></td> -->
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+                <td>1000000000000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

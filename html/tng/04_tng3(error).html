@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 1px solid #ccc;
+        }
+        td, th {
+            padding: 10px 20px ;
+        }
+        
+        td:last-child{
+            width:200px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+                수급 국원 지원 양식 
+                <!-- 글자가 작다 제목 사이즈가 필요하다 -->
+        </caption>
+            
+                <tr>
+                    <th rowspan="3">개인정보</th>
+                    <th>이름</th>
+                    <td></td>
+                    <!-- 4열 3행 표를 인식하여 table 사용 X
+                    합쳐질 첫 열을 인식 그후 다른 열을 삭제 O
+                    caption 안 h1를 넣었냐 X
+                    화려한 장식이 필요 없는 경우 간단하게 
+                    실제 4칸이 매우 작은 보이지 않는 칸이 합쳐 있다
+                    b, th table에선 th 사용
+                    위에 스타일로 조절 
+                    열 넓이 조절은 style로
+                    -->
+                </tr>
+
+                <tr>
+                    <th>학과/학번</th>
+                    <td ></td>
+                    
+
+                <tr>
+                    <th>연락처</th>
+                    <td ></td>
+                    
+                </tr>
+
+                <tr>
+                    <th>지원분야</th>
+                    <td></td>
+                    <td></td>
+                                 
+                </tr>
+            
+    </table>
+</body>
+</html>
