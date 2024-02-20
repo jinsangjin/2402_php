@@ -1,0 +1,71 @@
+.color-name{
+    color: red;
+}
+.color-hax{
+    color: #ff000f;
+}
+
+.color-rgb{
+    color: rgb(red, green, blue);
+}
+
+/* alpha 명도 */
+.color-rgba{
+    color: rgba(red, green, blue, alpha);
+}
+.color-hsla{
+    color: hsla(hue, saturation, lightness, alpha);
+}
+
+/* 위치 정렬 */
+#p-center
+{
+    text-align: center;
+}
+#p-right{
+    text-align: right;
+}
+
+#p-left{
+    text-align: left;
+}
+
+.div-center{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(167, 122, 63);
+}
+/* line-heigh 줄 간격 조절 */
+.div-center p {
+    text-align: center;
+    line-height: 200px;
+}
+
+/* 영어 첫번쨰 글자를 대문자로 변환 */
+.capitalize{
+    text-transform: capitalize;
+}
+
+/* 텍스를 영어 대문자롤 변환 */
+.uppercase{
+    text-transform: uppercase;
+}
+/* 텍스트 영어 소문자 변환 */
+.lowercase{
+    text-transform: lowercase;
+}
+
+/* 자간(글자 사이 간격) 설정 */
+.letter-spacing{
+    letter-spacing: 1rem;
+}
+
+/* 단어 사이 간격 */
+.word-spacing{
+    word-spacing: 1rem;
+}
+
+/* 그림자 설정(가로위치 세로위치 그림자 크기 색상) */
+.shadow{
+    text-shadow:5px 20px 3px red ;
+}

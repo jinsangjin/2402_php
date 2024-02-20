@@ -1,0 +1,29 @@
+/* * all 선택자  */
+*{
+    color: aqua;
+}
+/* type 선택자 '특정 태그명 (h1)' */
+h1{
+    color: red;
+}
+
+p{
+    color: green;
+}
+
+/* class 선택자 .~~~!!! */
+.color-orange{
+    color: orange;
+}
+.font-size-3rem{
+    font-size: 3rem;
+}
+.color-black{
+    color: black;
+}
+/* id 선택자  하나의 태그에만 선택자를 줄 떄 #!!*/
+#p-2{
+    color: salmon ;
+}
+/* group 선택자(기본 선택자 모두 적용 가능하다) 
+    hi, p, #p-2{  }*/
